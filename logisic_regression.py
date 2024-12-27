@@ -82,6 +82,8 @@ plt.grid()
 y_pred_prob = sigmoid(np.dot(x_ts, theta))
 y_pred = (y_pred_prob >= 0.5).astype(int)
 acc = np.sum(y_pred == y_ts)/len(y_ts)
+print(f"Accuracy from scratch: {acc:.4f}")
+
 
 # %%  From sklearn.linear_model library
 
@@ -90,6 +92,8 @@ model = LogisticRegression()
 model.fit(x_tr,y_tr.ravel()) 
 y_pred_2 = model.predict(x_ts)
 acc_2 = np.sum(y_pred_2 == y_ts.ravel())/len(y_ts)
+print(f"Accuracy from sklearn: {acc_2:.4f}")
+
 
 
 
