@@ -77,9 +77,7 @@ df['anomaly'] = predictions
 # Save the DataFrame with the anomaly index to a CSV file
 df.to_csv('winequality_anomalies.csv', index=False)
 
-'''
 # Plot pairwise scatterplots, coloring anomalies (see figure Anomalies)
 sns.pairplot(X, hue='anomaly', palette={1: 'blue', -1: 'red'}, diag_kind='kde') # kde (Kernel Density Estimate) plots the probability density function of each feature,
 plt.suptitle("Pairwise Plot with Anomalies Highlighted", y=1.02)
 plt.show()
-'''
