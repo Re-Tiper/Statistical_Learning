@@ -77,6 +77,7 @@ plt.xlabel('Epoch')
 plt.ylabel('Cost function J')
 plt.legend()
 plt.grid()
+#plt.show()
 
 # Accuracy on testing set
 y_pred_prob = sigmoid(np.dot(x_ts, theta))
