@@ -1,5 +1,4 @@
 # Statistical Learning
----
 
 The project focuses on analyzing data from the winequality-white.csv dataset to predict the quality of white wine using statistical and machine learning models. The objectives include:
 
