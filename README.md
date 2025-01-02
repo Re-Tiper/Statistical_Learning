@@ -1,3 +1,3 @@
 # Statistical Learning
 
-I implement various statistical learning models using basic or constructed data.
+I implement various statistical learning models using real-world or constructed data.
